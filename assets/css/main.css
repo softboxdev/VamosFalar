@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #3d4348; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #3e5055; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #2B2D42; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #2b2d42; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -34,7 +34,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #313336; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #77b6ca; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #ef233c; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -91,7 +91,7 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
+  background: #ffffff;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -155,7 +155,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 120px;
+  max-height: 136px;
   margin-right: 8px;
 }
 
@@ -890,7 +890,7 @@ section,
 }
 
 .hero h1 span {
-  color: var(--accent-color);
+  color: #d90429;
 }
 
 .hero p {
@@ -1630,7 +1630,7 @@ section,
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
-  background-color: var(--surface-color);
+  background-color: #ffffff;
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
   padding: 30px;
@@ -1666,7 +1666,7 @@ section,
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: var(--default-color);
   margin: 0;
 }
 
@@ -1687,7 +1687,7 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: var(--default-color);
   opacity: 1;
 }
 
@@ -1696,7 +1696,7 @@ section,
 }
 
 .testimonials .swiper-slide {
-  opacity: 0.3;
+  background-color: transparent;
 }
 
 @media (max-width: 1199px) {
@@ -1946,4 +1946,81 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Starter Section Section
+--------------------------------------------------------------*/
+
+/* Стили для вашего компонента */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Это фоновый цвет всей страницы */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* Белый фон для контейнера */
+  border-radius: 0px; /* Добавляет немного скругления углов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень для выделения компонента */
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0px;
+  box-shadow: none; /* Полностью убирает тень */
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  box-sizing: border-box;
+  border: none; /* Убирает любые границы */
+  outline: none; /* Убирает контуры при фокусе */
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.button-container {
+  margin-top: 30px;
+}
+
+.button {
+  background-color: #1d1b1b;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #1d1b1b; /* Изменение цвета текста при наведении */
+  border: none; /* Убирает любые границы при наведении */
+  outline: none; /* Убирает контуры при фокусе */
 }
