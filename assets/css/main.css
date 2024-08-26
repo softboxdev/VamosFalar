@@ -2093,3 +2093,173 @@ body {
 .promo-button:hover {
   background-color: #1d1f36; /* Цвет кнопки при наведении */
 }
+
+.custom-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff; /* Цвет фона секции */
+}
+
+.custom-title {
+  font-size: 28px;
+  color: #3d4348;
+  font-family: var(--heading-font);
+  margin-bottom: 40px;
+}
+
+.custom-title em {
+  font-style: italic;
+}
+
+.custom-card {
+  background-color: #ffffff;
+  border-radius: 20px; /* Скругленные углы карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для карточки */
+  max-width: 400px; /* Максимальная ширина карточки */
+  margin: 0 auto; /* Центрирование карточки */
+  overflow: hidden; /* Обрезка изображения */
+}
+
+.custom-image {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #e8e8e8; /* Разделительная линия */
+}
+
+.custom-card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.custom-card-content h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.custom-card-content p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.custom-button {
+  background-color: #2b2d42; /* Цвет кнопки */
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #1d1f36; /* Цвет кнопки при наведении */
+}
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Пространство между карточками */
+  padding: 20px; /* Отступ вокруг всей секции */
+  background-color: #f8f8f8; /* Цвет фона всей секции */
+}
+
+.info-card {
+  background-color: #e6e6e6; /* Светло-серый фон для карточки */
+  border-radius: 15px; /* Скругленные углы */
+  overflow: hidden; /* Обрезать содержимое, выходящее за границы карточки */
+  width: 30%; /* Ширина карточек */
+  text-align: center; /* Центрирование текста */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для объема */
+}
+
+.info-header {
+  padding: 20px; /* Отступ внутри заголовка */
+  background-color: #d3d3d3; /* Фон заголовка */
+}
+
+.info-header h3 {
+  font-size: 1.2em; /* Размер шрифта заголовка */
+  color: #000; /* Цвет текста заголовка */
+  margin: 0; /* Убираем отступы по умолчанию */
+}
+
+.info-header em {
+  font-style: italic; /* Курсив для выделенного текста */
+  color: #000; /* Цвет выделенного текста */
+}
+
+.info-image img {
+  width: 100%; /* Изображение заполняет всю ширину карточки */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  display: block; /* Убираем пробелы под изображением */
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column; /* Карточки в столбик на маленьких экранах */
+  }
+
+  .info-card {
+    width: 100%; /* Полная ширина карточек на маленьких экранах */
+  }
+}
+
+
+.about-section {
+  padding: 60px 0;
+}
+
+.about-card {
+  background-color: #f0f0f0; /* Цвет фона карточки */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; /* Высота карточки */
+}
+
+.about-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px; /* Отступ сверху */
+  flex-grow: 1; /* Занимает оставшееся пространство карточки */
+}
+
+.about-card-content h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about-card-content em {
+  font-style: italic;
+  color: #333;
+}
+
+.about-card-img {
+  width: 100%;
+  height: 65%; /* Делаем изображение занимать 65% карточки */
+  max-height: 400px; /* Ограничиваем максимальную высоту для изображения */
+  border-radius: 10px;
+  object-fit: cover; /* Изображение полностью покрывает область */
+}
+
+@media (min-width: 768px) {
+  .about-card-img {
+    max-height: 300px; /* Увеличение высоты изображения на больших экранах */
+  }
+
+  .about-card-content {
+    padding-top: 30px; /* Увеличиваем отступ сверху на больших экранах */
+  }
+}
