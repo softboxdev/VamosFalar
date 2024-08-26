@@ -819,6 +819,8 @@ section,
   text-align: center;
   padding-bottom: 60px;
   position: relative;
+  border: none; /* Убираем любые границы */
+  box-shadow: none; /* Убираем любые тени, если есть */
 }
 
 .section-title h2 {
@@ -827,19 +829,13 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  border-bottom: none; /* Убираем любые нижние границы */
+  box-shadow: none; /* Убираем любые тени, если есть */
 }
 
 .section-title h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  content: none; /* Убираем псевдоэлемент */
+  display: none; /* Убираем отображение псевдоэлемента */
 }
 
 .section-title p {
@@ -1913,8 +1909,9 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff; /* Белый фон для контейнера */
-  border-radius: 0px; /* Добавляет немного скругления углов */
+  border-radius: 0; /* Нет скругленных углов */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень для выделения компонента */
+  border: none; /* Убирает все границы */
 }
 
 .title {
@@ -2026,4 +2023,9 @@ body {
 
 .team .team-member:hover .social {
   opacity: 1;
+}
+.forwhom h2 {
+  font-size: 32px; /* Пример размера шрифта заголовка */
+  font-weight: 700; /* Пример толщины шрифта заголовка */
+  margin-bottom: 20px; /* Добавляем отступ снизу для заголовка */
 }
