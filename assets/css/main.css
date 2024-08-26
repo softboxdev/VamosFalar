@@ -1400,104 +1400,23 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
-.pricing .pricing-item {
-  background-color: none;
-  padding: 40px 40px;
-  height: 100%;
-  border-radius: none;
-}
 
-.pricing h3 {
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.pricing h4 {
-  color: var(--accent-color);
-  font-size: 48px;
-  font-weight: 700;
-  font-family: var(--heading-font);
-  margin-bottom: 0;
-}
-
-.pricing h4 sup {
-  font-size: 28px;
-}
-
-.pricing h4 span {
-  color: none;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.pricing .description {
-  font-size: 14px;
-}
-
-.pricing .cta-btn {
-  border: 1px solid var(--default-color);
-  color: var(--default-color);
-  display: block;
-  text-align: center;
-  padding: 10px 35px;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: var(--heading-font);
-  transition: 0.3s;
-  margin-top: 20px;
-  margin-bottom: 6px;
-}
-
-.pricing .cta-btn:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  text-align: left;
-  line-height: 20px;
-}
-
-.pricing ul li {
-  padding: 10px 0;
+/* Стиль для карточек */
+.pricing-item {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 40px;
+  background-color: transparent; /* Прозрачный фон */
+  border-radius: 8px;
+  text-align: left; /* Выравнивание текста по левому краю */
 }
 
-.pricing ul li:last-child {
-  padding-bottom: 0;
+/* Контент карточки */
+.pricing-item .content {
+  flex-grow: 1;
 }
-
-.pricing ul i {
-  color: #059652;
-  font-size: 24px;
-  padding-right: 3px;
-}
-
-.pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-
-.pricing .featured {
-  position: relative;
-}
-
 .pricing .featured .popular {
   position: absolute;
   top: 15px;
@@ -1510,33 +1429,44 @@ section,
   font-size: 14px;
   font-weight: 500;
 }
+/* Информация о курсе и кнопка */
+.pricing-item .course-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Выровнять все элементы вниз */
+  margin-top: auto;
+  text-align: left; /* Выравнивание текста по левому краю */
+}
 
-.pricing .featured .cta-btn {
+/* Стили для текста стоимости и длительности */
+.pricing-item .course-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: var(--default-color);
+  text-align: left; /* Выравнивание текста по левому краю */
+}
+
+/* Кнопка внизу */
+.cta-btn {
+  display: block;
+  text-align: center;
+  padding: 10px 35px;
+  margin-top: 15px;
+  border: 1px solid var(--default-color);
+  color: var(--default-color);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--heading-font);
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
   border-color: var(--accent-color);
 }
 
-@media (max-width: 992px) {
-  .pricing .box {
-    max-width: 60%;
-    margin: 0 auto 30px auto;
-  }
-}
-
-@media (max-width: 767px) {
-  .pricing .box {
-    max-width: 80%;
-    margin: 0 auto 30px auto;
-  }
-}
-
-@media (max-width: 420px) {
-  .pricing .box {
-    max-width: 100%;
-    margin: 0 auto 30px auto;
-  }
-}
 
 /*--------------------------------------------------------------
 # Faq Section
