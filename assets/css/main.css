@@ -842,6 +842,23 @@ section,
   margin-bottom: 0;
 }
 
+.custom-margin {
+  margin-top: 30px;  /* Отступ сверху */
+  margin-bottom: 120px; /* Отступ снизу */
+  text-align: center; /* Выравнивание по центру */
+}
+.custom-promo-header {
+  margin-top: 30px;  /* Отступ сверху */
+  margin-bottom: 0px; /* Отступ снизу */
+  text-align: center; /* Выравнивание по центру */
+}
+.course-title {
+  font-size: 36px; /* Размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  text-align: center; /* Выравнивание по центру */
+  margin-top: 20px; /* Отступ сверху */
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1886,9 +1903,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 /*--------------------------------------------------------------
 # Starter Section Section
@@ -1934,12 +1948,32 @@ body {
   font-size: 18px;
   transition: background-color 0.3s;
 }
+.button-custom {
+  background-color: #1d1b1b;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Отступ сверху перед кнопкой */
+}
 
 .button:hover {
   background-color: #ffffff;
   color: #1d1b1b; /* Изменение цвета текста при наведении */
   border: none; /* Убирает любые границы при наведении */
   outline: none; /* Убирает контуры при фокусе */
+}
+.info-text {
+  margin-top: 10px; /* Отступ сверху уменьшаем, чтобы текст был ближе к верху */
+}
+
+.info-text h2 {
+  margin-top: 0px;
+  margin-inline-end: 30px;
+  font-size: 24px; /* Размер шрифта заголовка */
+  text-align: center; /* Выравнивание по центру */
 }
 
 /*--------------------------------------------------------------
