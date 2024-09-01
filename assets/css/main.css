@@ -12,7 +12,7 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Nunito",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Nunito",  sans-serif;
   --nav-font: "Inter",  sans-serif;
 }
@@ -2259,6 +2259,12 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   height: 100%; /* Высота карточки */
+  margin: 0 0px 0px; /* Добавляем отступы */
+  
+}
+.about-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Добавляем эффект тени при наведении */
+  transform: translateY(-5px); /* Небольшой эффект подъема при наведении */
 }
 
 .about-card-content {
@@ -2285,7 +2291,7 @@ body {
 .about-card-img {
   width: 100%;
   height: 65%; /* Делаем изображение занимать 65% карточки */
-  max-height: 400px; /* Ограничиваем максимальную высоту для изображения */
+  max-height: 600px; /* Ограничиваем максимальную высоту для изображения */
   border-radius: 10px;
   object-fit: cover; /* Изображение полностью покрывает область */
 }
@@ -2293,10 +2299,12 @@ body {
 @media (min-width: 768px) {
   .about-card-img {
     max-height: 300px; /* Увеличение высоты изображения на больших экранах */
+    margin-bottom: 30px;
   }
 
   .about-card-content {
     padding-top: 30px; /* Увеличиваем отступ сверху на больших экранах */
+    margin-bottom: 30px;
   }
 }
 .crew-section {
@@ -2305,14 +2313,16 @@ body {
 
 .crew-image {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0px;
   object-fit: cover;
-  max-height: 400px;
+  max-height: 800px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
 .crew-content {
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .crew-title {
@@ -2330,6 +2340,7 @@ body {
 }
 
 .crew-name {
+  font-style: italic;
   font-size: 1.25em;
   font-weight: bold;
   margin-bottom: 15px;

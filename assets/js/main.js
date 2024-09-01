@@ -177,11 +177,11 @@
    * Testimonials Slider
    */
   new Swiper('.portfolio-details-slider', {
-    speed: 600,
+    speed: 60000,
     loop: true,
     autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
+      delay: 50000,
+      disableOnInteraction: true
     },
     slidesPerView: 'auto',
     pagination: {
