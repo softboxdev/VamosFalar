@@ -1681,6 +1681,12 @@ section,
   background-color: var(--color-white);
   opacity: 1;
 }
+/* Мобильные устройства (ширина экрана меньше 768px) */
+@media (max-width: 768px) {
+  .testimonials .swiper-pagination {
+    margin-top: 500px; /* Увеличиваем отступ для мобильных устройств */
+  }
+}
 
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
