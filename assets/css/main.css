@@ -2373,3 +2373,36 @@ body {
   max-width: 400px; /* Ограничиваем максимальную ширину поля ввода */
   font-size: 16px;
 }
+/* Стили для пагинации */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black; /* Черный цвет стрелок */
+  width: 40px;  /* Ширина кнопок */
+  height: 40px; /* Высота кнопок */
+  background-color: white; /* Белый фон для кнопок */
+  border-radius: 50%; /* Закругленные края кнопок */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Тень для кнопок */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* Размер иконок */
+  margin-top: 40px; /* Отступ сверху, чтобы кнопки находились снизу слайдера */
+  cursor: pointer; /* Курсор указывает на интерактивность */
+}
+
+/* Стили для расположения кнопок навигации снизу */
+.swiper-button-next {
+  position: absolute;
+  bottom: 10px; /* Отступ снизу */
+  right: 50%; /* Расположить по центру */
+  transform: translateX(60px); /* Смещение вправо */
+}
+
+.swiper-button-prev {
+  position: absolute;
+  bottom: 10px; /* Отступ снизу */
+  left: 50%; /* Расположить по центру */
+  transform: translateX(-60px); /* Смещение влево */
+}
+

@@ -177,10 +177,10 @@
    * Testimonials Slider
    */
   new Swiper('.portfolio-details-slider', {
-    speed: 60000,
+    speed: 5,
     loop: true,
     autoplay: {
-      delay: 50000,
+      delay: 8000000,
       disableOnInteraction: true
     },
     slidesPerView: 'auto',
@@ -214,3 +214,19 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+new Swiper('.testimonials-slider', {
+  loop: true, // Включает бесконечный цикл слайдов
+  autoplay: {
+    delay: 5000, // Задержка в 5 секунд между слайдами
+    disableOnInteraction: false, // Автопрокрутка не останавливается после взаимодействия пользователя
+  },
+  pagination: {
+    el: '.swiper-pagination', // Указывает элемент для пагинации
+    clickable: true, // Пагинация кликабельна
+  },
+  navigation: {
+    nextEl: '.swiper-button-next', // Кнопка "вперед" для слайдера
+    prevEl: '.swiper-button-prev', // Кнопка "назад" для слайдера
+  },
+});
